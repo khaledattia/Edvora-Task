@@ -14,7 +14,7 @@ export const DropMenu = ({ setMenu }) => {
         function handleCLick( { target } ) {
             const menu = document.querySelector(`.${ drop_menu }`);
             
-            if( !menu.contains( target ) ) {
+            if( menu.contains( target ) === false) {
                 setMenu( false );
             }
         }
