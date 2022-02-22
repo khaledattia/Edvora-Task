@@ -23,7 +23,7 @@ export const Ride = ( props ) => {
     const _time = d.toTimeString().substring(0, 5)
     const txtDate =  `${ _date[2] }th ${ _date[1] } ${ _date[3] } ${ _time }` ;
 
-    const distance = calcDistance( station_path,  station_code);
+    const distance = calcDistance( station_path,  station_code );
 
     return (
         <div className='--container'>
@@ -61,7 +61,6 @@ export const Ride = ( props ) => {
                         Date: {" "}
                         <span 
                         className = { val }>
-                            {/* 15th Feb 2022 16:33 */}
                             { txtDate }
                         </span>
                     </p>

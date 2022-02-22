@@ -12,9 +12,8 @@ export const DropMenu = ({ setMenu }) => {
     useEffect(() => {
 
         function handleCLick( { target } ) {
-            const menu = document.querySelector(`.${ drop_menu }`);
-            
-            if( menu.contains( target ) === false) {
+            const menu = document.getElementsByClassName(drop_menu)[0];
+            if( !menu.contains( target ) ) {
                 setMenu( false );
             }
         }
